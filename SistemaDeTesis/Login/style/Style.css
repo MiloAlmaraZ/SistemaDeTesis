@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffcfc;
+}
+
+.container {
+    display: flex;
+    width: 700px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 8px;
+    background: linear-gradient(65deg, #ffffff 50%, #000 50%);
+    position: relative; /* Asegura que la cortina esté encima del contenedor */
+    transition: background 1s ease; /* Transición suave en el fondo */
+}
+.bg-transition {
+    background: #000 !important; /* Color final después de la transición */
+}
+.left {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: right 2s ease-in-out; 
+}
+
+.left h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.Bienvenido{
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.input-container label {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.input-container .iconu {
+    position: absolute;
+    right: 390px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #888;
+}
+.input-container .iconp {
+    position: absolute;
+    right: 390px;
+    top: 61%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.signup-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.signup-text a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.right h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.right p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+
+.curtain {
+    position: absolute;
+    top: 0;
+    right: -100%; 
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 1;
+    transition: right 0.5s ease-in-out; 
+}
+
